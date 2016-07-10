@@ -4,38 +4,46 @@ import random
 import subprocess
 
 slogans = [
-"I am %s.",
-"hello you naughty afficianado of western fashion. I am %s.",
-"I am stylish... but i am not, I am not... affordable. I am %s.",
-"%s is function... fashion... tradition... and sophistication.",
-"Make yourself great again... with %s.",
-"Hello. I am %s ... The Future of Wearable Fashion.",
-"Do you want to take a selfie with %s? hashtag... formal... western... wear",
-"You can look but you cannot... touch... my... %s",
-"If it feels good... Do it... with %s"
+"I am e-bolo.",
+"Hello you afficianado of western fashion. I am e-bolo.",
+"I am stylish... but i am not, I am not... affordable. I am e-bolo.",
+"e-bolo is function... fashion... tradition... and sophistication.",
+"Make yourself great again... with e-bolo.",
+"Hello. I am e-bolo ... The Future of Wearable Fashion.",
+"Do you want to take a selfie with e-bolo? Hash-tag... formal... western... wear",
+"You can look but you cannot... touch... my... e-bolo",
+"If it feels good... do it... with e-bolo"
 ]
 
-
 def whipcrack():
-	subprocess.call(['aplay', 'whipcrack.wav'])
+    subprocess.call(['aplay', 'whipcrack.wav'])
 
 def say(sentence = ""):
-	subprocess.call(['espeak', 
-		         ('-s %d' % (random.randrange(120) + 100)),
-                         ('-p %d' % (random.randrange(50) + 25)), 
-                         '\"%s\"' % sentence])
+    subprocess.call(['espeak', 
+                     ('-s %d' % (random.randrange(120) + 100)),
+                     ('-p %d' % (random.randrange(50) + 25)), 
+                     '\"%s\"' % sentence])
 
 def glitchybolo():
-	e = 1 + random.randrange(10)
-	o = 1 + random.randrange(6)
-        articles = ["...", "the...", "an...", "your...", "america's sweetheart... the..."]
-        a = articles[random.randrange(len(articles))]
-	return a + ("e"*e)[:e] + " bol" + ("o"*o)[:o]
+    e = 1 + random.randrange(10)
+    o = 1 + random.randrange(6)
+    articles = ["...", "the...", "an...", "your...", "america's sweetheart... the..."]
+    a = articles[random.randrange(len(articles))]
+    return a + ("e"*e)[:e] + " bol" + ("o"*o)[:o]
 
 def saybolo(sentence):
-	say(sentence % glitchybolo())
-	
-	
+    if random.randint(0,1):
+        sentence = sentence.replace("e-bolo", glitchybolo())
+    say(sentence)
+
+def testWithoutButton():
+    while True:
+        slogan = slogans[random.randrange(len(slogans))]
+        print(slogan)
+        saybolo(slogan)
+        whipcrack()
+        time.sleep(1)
+
 def main():
 	GPIO.setmode(GPIO.BCM)
 
@@ -54,6 +62,5 @@ def main():
 
 
 main()
-
 
 
