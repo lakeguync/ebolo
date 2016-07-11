@@ -9,11 +9,11 @@ import time
 
 slogans = [
 "Howdy",
-"Gidd... ee... up...",
-"With e-bolo you will always look great... Dead... or... Alive...",
+"Gidd ee... up...",
+"Wanted... Dead... or Alive... e-bolo",
 "My cord is braided from the finest Italian leather",
 "e-bolo will make you a pioneer of taste and sophistication",
-"Neck... ties.. are... pass a",
+"Neck... ties... are... pass say",
 "Be a horse of a different color... with e-bolo",
 "Did you know I am the offical neck wear of Arizona?",
 "It is time to hit the road. Battery is fully charged.",
@@ -23,7 +23,10 @@ slogans = [
 "I am stylish... but i am not, I am not... affordable. I am e-bolo.",
 "e-bolo is function... fashion... tradition... and sophistication.",
 "Make yourself great again... with e-bolo.",
+"Make yourself great again... with e-bolo.",
+"Make yourself great again... with e-bolo.",
 "Hello. I am e-bolo ... The Future of Electronic Fashion.",
+"Do you want to take a selfie... with e-bolo? Hash-tag... formal... western... wear.",
 "Do you want to take a selfie... with e-bolo? Hash-tag... formal... western... wear.",
 "You can look but you cannot... touch...  my... e bolo",
 "If it feels good... do it... with e-bolo."
@@ -62,7 +65,7 @@ def whipCrack():
 
 def randomizedEspeak(sentence = ""):
     command = ['espeak', 
-            ('-s %d' % (random.randrange(60) + 120)),
+            ('-s %d' % (random.randrange(50) + 120)),
             ('-p %d' % (random.randrange(50) + 25)), 
             '\"%s\"' % sentence]
     callCommand(command)
