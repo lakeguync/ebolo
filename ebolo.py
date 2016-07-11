@@ -22,6 +22,7 @@ slogans = [
 "You must be an afficianado of western fashion.",
 "I am stylish... but i am not, I am not... affordable. I am e-bolo.",
 "e-bolo is function... fashion... tradition... and sophistication.",
+"e-bolo is function... fashion... fantastico... flamboyant... flammable... formidable... fragile... un-forgettable... and sophistication.",
 "Make yourself great again... with e-bolo.",
 "Make yourself great again... with e-bolo.",
 "Make yourself great again... with e-bolo.",
@@ -29,7 +30,8 @@ slogans = [
 "Do you want to take a selfie... with e-bolo? Hash-tag... formal... western... wear.",
 "Do you want to take a selfie... with e-bolo? Hash-tag... formal... western... wear.",
 "You can look but you cannot... touch...  my... e bolo",
-"If it feels good... do it... with e-bolo."
+"If it feels good... do it... with e-bolo.",
+"e-bolo is essential function... e bolo is the future... e bolo is fully-featured... e bolo is slightly flammable... e bolo is ultimate fashion... and ultimate sophistication. "
 ]
 
 
@@ -116,7 +118,7 @@ def main():
         input_state = GPIO.input(18)
         if input_state == False:
             eboloButtonAction()
-            time.sleep(0.2)
+        time.sleep(0.1)
 
 main()
 
