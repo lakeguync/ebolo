@@ -16,7 +16,7 @@ slogans = [
 "Wanted... Dead... or Alive... e-bolo",
 "My cord is braided from the finest Italian leather",
 "e-bolo will make you a pioneer of taste and sophistication",
-"Neck... ties... are... pass say",
+"Neck... ties... are pass say",
 "Be a horse of a different color... with e-bolo",
 "Did you know I am the offical neck wear of Arizona?",
 "It is time to hit the road. Battery is fully charged.",
@@ -117,7 +117,7 @@ def main():
         input_state = GPIO.input(18)
         if input_state == False:
             eboloButtonAction()
-        time.sleep(0.1)
+        time.sleep(0.05)
 
 main()
 
