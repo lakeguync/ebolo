@@ -8,23 +8,32 @@ import sys
 import time
 
 slogans = [
+"Howdy",
+"Gidd... ee... up...",
+"With e-bolo you will always look great... Dead... or... Alive...",
+"My cord is braided from the finest Italian leather",
+"e-bolo will make you a pioneer of taste and sophistication",
+"Neck... ties.. are... pass a",
+"Be a horse of a different color... with e-bolo",
+"Did you know I am the offical neck wear of Arizona?",
+"It is time to hit the road. Battery is fully charged.",
 "I am e-bolo.",
+"I... am... e-bolo.",
 "You must be an afficianado of western fashion.",
 "I am stylish... but i am not, I am not... affordable. I am e-bolo.",
 "e-bolo is function... fashion... tradition... and sophistication.",
 "Make yourself great again... with e-bolo.",
 "Hello. I am e-bolo ... The Future of Electronic Fashion.",
 "Do you want to take a selfie... with e-bolo? Hash-tag... formal... western... wear.",
-"You can look but you cannot... touch... my... e-bolo.",
+"You can look but you cannot... touch...  my... e bolo",
 "If it feels good... do it... with e-bolo."
 ]
 
+
 boloPrefixes = [
-"... ", 
 "the... ", 
 "an... ", 
-"your... ", 
-"America's Favorite... the... "
+"your... ",
 ]
 
 WHIPCRACK_WAV="whipcrack.wav"
@@ -53,7 +62,7 @@ def whipCrack():
 
 def randomizedEspeak(sentence = ""):
     command = ['espeak', 
-            ('-s %d' % (random.randrange(120) + 100)),
+            ('-s %d' % (random.randrange(60) + 120)),
             ('-p %d' % (random.randrange(50) + 25)), 
             '\"%s\"' % sentence]
     callCommand(command)
@@ -65,8 +74,10 @@ def glitchyBolo():
     ebolo = "e-bolo"
     if random.randint(0,1):
         e = 1 + random.randrange(10)
+        #o = 1 + random.randrange(6)
+        #ebolo = ("e"*e)[:e] + " bol" + ("o"*o)[:o]
         o = 1 + random.randrange(6)
-        ebolo = ("e"*e)[:e] + " bol" + ("o"*o)[:o]
+        ebolo = ("e"*e)[:e] + " bolo"
     return ebolo
 
 def randomBoloPrefix():
