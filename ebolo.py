@@ -8,6 +8,9 @@ import sys
 import time
 
 slogans = [
+"I am e-bolo, The Electronic... Bolo... Neck Tie.",
+"I am e-bolo, The Electronic... Bolo... Neck Tie. You can wear me and I will make your life so much better.",
+"I am e-bolo, The Electronic... Bolo... Neck Tie. I am HD, GPS, Why Fi, Four Gee, Three Gee, Five Gee, A-M F-M, A-C D-C, Blue tooth enabled and cable-ready.",
 "Howdy",
 "Gidd ee... up...",
 "Wanted... Dead... or Alive... e-bolo",
@@ -17,21 +20,17 @@ slogans = [
 "Be a horse of a different color... with e-bolo",
 "Did you know I am the offical neck wear of Arizona?",
 "It is time to hit the road. Battery is fully charged.",
-"I am e-bolo.",
-"I... am... e-bolo.",
 "You must be an afficianado of western fashion.",
 "I am stylish... but i am not, I am not... affordable. I am e-bolo.",
 "e-bolo is function... fashion... tradition... and sophistication.",
-"e-bolo is function... fashion... fantastico... flamboyant... flammable... formidable... fragile... un-forgettable... and sophistication.",
-"Make yourself great again... with e-bolo.",
+"e-bolo is essential function... e bolo is the future... e bolo is fully-featured... e bolo is slightly flammable... e bolo is ultimate fashion... and ultimate sophistication. ",
 "Make yourself great again... with e-bolo.",
 "Make yourself great again... with e-bolo.",
 "Hello. I am e-bolo ... The Future of Electronic Fashion.",
 "Do you want to take a selfie... with e-bolo? Hash-tag... formal... western... wear.",
 "Do you want to take a selfie... with e-bolo? Hash-tag... formal... western... wear.",
 "You can look but you cannot... touch...  my... e bolo",
-"If it feels good... do it... with e-bolo.",
-"e-bolo is essential function... e bolo is the future... e bolo is fully-featured... e bolo is slightly flammable... e bolo is ultimate fashion... and ultimate sophistication. "
+"If it feels good... do it... with e-bolo."
 ]
 
 
